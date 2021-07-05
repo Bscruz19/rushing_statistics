@@ -18,5 +18,7 @@ config :rushing_statistics, RushingStatisticsWeb.Endpoint,
   http: [port: 4002],
   server: false
 
+config :rushing_statistics, file_path: "./test/support/fixtures/rushing_mock.json"
+
 # Print only warnings and errors during test
 config :logger, level: :warn
