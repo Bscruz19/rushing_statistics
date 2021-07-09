@@ -1,0 +1,12 @@
+<form class="d-flex align-items-center" phx-target="<%= @myself %>" phx-change="search" phx-submit="search">
+  <input
+    class="container"
+    type="text"
+    name="query"
+    value=""
+    placeholder="Player, Team or Position"
+    autocomplete="off"
+    phx-debounce="300"
+    />
+    <button class="p-2" type="submit" phx-disable-with="Searching...">Search</button>
+</form>
